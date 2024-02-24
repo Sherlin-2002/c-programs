@@ -1,0 +1,28 @@
+#include <stdio.h>
+int a[10]; //global variable
+int n;
+void read_array()
+{
+ int i;
+ for(i = 0;i < n;i++)
+ {
+ printf("Enter the value for a[%d]",i);
+ scanf("%d",&a[i]);
+ }
+}
+void disp_array()
+{
+ int i;
+ for(i = 0;i < n;i++)
+ {
+ printf("%d\t",a[i]);
+ }
+}
+int main()
+{
+ int i;
+ printf("Enter the value for n");
+ scanf("%d",&n);
+ read_array();
+ disp_array();
+ return 0;
