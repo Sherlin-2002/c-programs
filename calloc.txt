@@ -1,0 +1,17 @@
+calloc() – Initializes the memory allocated with zero
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+ int *p;
+ p = (int *)calloc(1,sizeof(int));
+ printf("Not initiliazed .. Still zero\n\n");
+ printf("*p=%d\n\n",*p);
+ 
+ *p = 20;
+ 
+ printf("\nAfter Initilization\n");
+ 
+ printf("*p = %d", *p); 
+ free(p);
+ return 0;
